@@ -1,0 +1,344 @@
+// MIXINS
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// TODO: Define Style Margin-Padding
+//---------------------------------------
+.marginAndPadding(@index, @countDown: 5, @min-size: 0, @ruler: px)
+{
+
+	// LOOP
+	.style_margin_padding (@index) when (@index >= @min-size) {
+
+	// Padding
+	.pd@{index} {padding: ~"@{index}@{ruler}";}
+	.pdT@{index} {padding-top: ~"@{index}@{ruler}";}
+	.pdR@{index} {padding-right: ~"@{index}@{ruler}";}
+	.pdB@{index} {padding-bottom: ~"@{index}@{ruler}";}
+	.pdL@{index} {padding-left: ~"@{index}@{ruler}";}
+
+	// Padding Important
+	.pd@{index}-ipt {padding: ~"@{index}@{ruler}!important";}
+	.pdT@{index}-ipt {padding-top: ~"@{index}@{ruler}!important";}
+	.pdR@{index}-ipt {padding-right: ~"@{index}@{ruler}!important";}
+	.pdB@{index}-ipt {padding-bottom: ~"@{index}@{ruler}!important";}
+	.pdL@{index}-ipt {padding-left: ~"@{index}@{ruler}!important";}
+
+	// Padding Horizatial
+	.pd-0-@{index} {padding: 0 ~"@{index}@{ruler}";}
+	.pd-0-@{index}-ipt {padding: 0 ~"@{index}@{ruler}!important";}
+
+
+	// Padding Vertical
+	.pd-@{index}-0 {padding: ~"@{index}@{ruler}" 0;}
+	.pd-@{index}-0-ipt {padding: ~"@{index}@{ruler}" 0!important;}
+
+	//-----------------------------------------------------------------
+	// Margin
+	.mg@{index} {margin: ~"@{index}@{ruler}";}
+	.mgT@{index} {margin-top: ~"@{index}@{ruler}";}
+	.mgR@{index} {margin-right: ~"@{index}@{ruler}";}
+	.mgB@{index} {margin-bottom: ~"@{index}@{ruler}";}
+	.mgL@{index} {margin-left: ~"@{index}@{ruler}";}
+	// Margin Important
+	.mg@{index}-ipt {margin: ~"@{index}@{ruler}!important";}
+	.mgT@{index}-ipt {margin-top: ~"@{index}@{ruler}!important";}
+	.mgR@{index}-ipt {margin-right: ~"@{index}@{ruler}!important";}
+	.mgB@{index}-ipt {margin-bottom: ~"@{index}@{ruler}!important";}
+	.mgL@{index}-ipt {margin-left: ~"@{index}@{ruler}!important";}
+
+	// margin Horizatial
+	.mg-0-@{index} {margin: 0 ~"@{index}@{ruler}";}
+	.mg-0-@{index}-ipt {margin: 0 ~"@{index}@{ruler}!important";}
+
+	// margin Vertical
+
+	.mg-@{index}-0 {margin: ~"@{index}@{ruler}" 0;}
+	.mg-@{index}-0-ipt {margin: ~"@{index}@{ruler}" 0!important;}
+
+	// next iteration
+	.style_margin_padding(@index - @countDown);
+
+	}
+	// end the loop when index is 0
+	.style_margin_padding (0) {}
+	// "call" the loopingClass the first time with highest value
+	.style_margin_padding (@index);
+}
+
+// TODO: Utilities Class Font Size
+//---------------------------------------
+.fontSizeLoop(@maxFontSize, @countDown: 1, @min-size: 0, @ruler: px) {
+    .loopSize (@index) when (@index >= @min-size) {
+        .f-@{index} {
+            // your resulting css
+            font-size: ~"@{index}@{ruler}";
+        }
+
+        .f-@{index}-ipt {
+            // your resulting css
+            font-size: ~"@{index}@{ruler}"!important;
+        }
+
+        // next iteration
+        .loopSize(@index - @countDown);
+    }
+
+    // end the loop when index is 0
+    .loopSize (0) {}
+    .loopSize(@maxFontSize);
+}
+
+// TODO: Loop Width Size
+//---------------------------------------
+.widthSizeLoop(@maxFontSize, @countDown: 1, @min-size: 0, @ruler: px) {
+    .loopSize (@index) when (@index >= @min-size) {
+        .w@{index} {
+            // your resulting css
+            width: ~"@{index}@{ruler}";
+        }
+
+        .w@{index}-ipt {
+            // your resulting css
+            width: ~"@{index}@{ruler}"!important;
+        }
+
+        // next iteration
+        .loopSize(@index - @countDown);
+    }
+
+    // end the loop when index is 0
+    .loopSize (0) {}
+    .loopSize(@maxFontSize);
+}
+
+// Liquid Layout
+//---------------------------------------
+#liquid-layout {
+	// Fixed - Fluid Layout use Overflow
+	.fixedFluidOverflow(@widthFixedColum, @space: 0, @fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fixedColumName} {
+			float: left;
+			width: @widthFixedColum;
+			margin-right: @space;
+			+ .@{fluidColumName} {
+				overflow: hidden;
+			}
+			&.hidden, &.hide {
+				+ .@{fluidColumName} {
+					overflow: visible;
+				}
+			}
+		}
+	}
+
+	.unFixedFluidOverflow(@fixedColumName: fixed-colum, @fluidColumName: fluid-colum){
+		.@{fixedColumName} {
+			float: none;
+			width: auto;
+			margin-right: 0;
+			+ .@{fluidColumName} {
+				overflow: visible;
+			}
+		}
+	}
+
+	// Fluid - Fixed Layout use Overflow
+	.fluidFixedOverflow(@widthFixedColum, @space: 0, @fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fixedColumName} {
+			float: right;
+			width: @widthFixedColum;
+			margin-left: @space;
+			+ .@{fluidColumName} {
+				overflow: hidden;
+			}
+			&.hidden, &.hide {
+				+ .@{fluidColumName} {
+					overflow: visible;
+				}
+			}
+		}
+	}
+
+	.unFluidFixedOverflow(@fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		.@{fixedColumName} {
+			float: none;
+			width: auto;
+			margin-left: 0;
+		}
+		.@{fluidColumName} {
+			overflow: visible;
+		}
+	}
+
+	// Fixed - Fluid - Fixed Layout use Overflow
+	.fixedFluidFixedOverflow(@widthFixedLeftColum, @spaceLeft: 0, @widthFixedRightColum, @spaceRight: 0, @fixedLeftColumName: fixed-left-colum, @fixedRightColumName: fixed-right-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fixedLeftColumName} {
+			float: left;
+			width: @widthFixedLeftColum;
+			margin-right: @spaceLeft;
+		}
+		.@{fixedRightColumName} {
+			float: right;
+			width: @widthFixedRightColum;
+			margin-left: @spaceRight;
+		}
+		.@{fluidColumName} {
+			overflow: hidden;
+		}
+		.@{fixedLeftColumName}.hide + .@{fixedRightColumName}.hide,
+		.@{fixedLeftColumName}.hidden + .@{fixedRightColumName}.hidden {
+			+ .@{fluidColumName} {
+				overflow: visible;
+			}
+		}
+	}
+
+	.unFixedFluidFixedOverflow(@fixedLeftColumName: fixed-left-colum, @fixedRightColumName: fixed-right-colum, @fluidColumName: fluid-colum) {
+		.@{fixedLeftColumName} {
+			float: none;
+			width: auto;
+			margin-right: 0;
+		}
+		.@{fixedRightColumName} {
+			float: right;
+			width: auto;
+			margin-left: 0;
+		}
+		.@{fluidColumName} {
+			overflow: visible;
+		}
+	}
+
+	// Fixed - Fluid Layout Dynamic
+	.fixedFluidDynamic(@widthFixedColum, @space: 0, @fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fluidColumName} {
+			float: left;
+			width: 100%;
+			> .inner {
+				margin-left: @widthFixedColum + @space;
+			}
+		}
+		.@{fixedColumName} {
+			float: left;
+			width: @widthFixedColum;
+			margin-left: -100%;
+		}
+	}
+
+	.unFixedFluidDynamic(@fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		.@{fluidColumName} {
+			float: none;
+			width: auto;
+			> .inner {
+				margin-left: 0;
+			}
+		}
+		.@{fixedColumName} {
+			float: none;
+			width: auto;
+			margin-left: 0;
+		}
+	}
+
+	// Fluid - Fixed Layout Dynamic
+	.fluidFixedDynamic(@widthFixedColum, @space: 0, @fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fluidColumName} {
+			float: left;
+			width: 100%;
+			> .inner {
+				margin-right: @widthFixedColum + @space;
+			}
+		}
+		.@{fixedColumName} {
+			float: right;
+			width: @widthFixedColum;
+			margin-left: -@widthFixedColum;
+		}
+	}
+
+	.unFluidFixedDynamic(@fixedColumName: fixed-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fluidColumName} {
+			float: none;
+			width: auto;
+			> .inner {
+				margin-right: 0;
+			}
+		}
+		.@{fixedColumName} {
+			float: right;
+			width: auto;
+			margin-left: 0;
+		}
+	}
+
+	// Fixed - Fluid - Fixed Layout Dynamic
+	.fixedFluidFixedDynamic(@widthFixedLeftColum, @spaceLeft: 0, @widthFixedRightColum, @spaceRight: 0, @fixedLeftColumName: fixed-left-colum, @fixedRightColumName: fixed-right-colum, @fluidColumName: fluid-colum) {
+		&:extend(.clearfix all);
+		.@{fluidColumName} {
+			float: left;
+			width: 100%;
+			> .inner {
+				margin-left: @widthFixedLeftColum + @spaceLeft;
+				margin-right: @widthFixedRightColum + @spaceRight;
+			}
+		}
+		.@{fixedLeftColumName} {
+			float: left;
+			margin-left: -100%;
+			width: @widthFixedLeftColum;
+		}
+		.@{fixedRightColumName} {
+			float: right;
+			width: @widthFixedRightColum;
+			margin-left: -@widthFixedRightColum;
+		}
+	}
+	.unFixedFluidFixedDynamic(@widthFixedLeftColum, @spaceLeft: 0, @widthFixedRightColum, @spaceRight: 0, @fixedLeftColumName: fixed-left-colum, @fixedRightColumName: fixed-right-colum, @fluidColumName: fluid-colum) {
+		.@{fluidColumName} {
+			float: none;
+			width: 100%;
+			> .inner {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		.@{fixedLeftColumName} {
+			float: none;
+			margin-left: 0;
+			width: auto;
+		}
+		.@{fixedRightColumName} {
+			float: none;
+			width: auto;
+			margin-left: 0;
+		}
+	}
+}
+
+// TODO: Link Color
+.linkColor(@color: @linkColor, @colorHover: @linkColorHover){
+    color: @color;
+    &:hover {
+        color: @colorHover;
+    }
+}
+
+// Mixins For Project
+.font-adobe() {
+	font-family: @font-family-base;
+}
+.font-time-roman() {
+	font-family: "Time Roman", "Times New Roman", Times, serif;
+}
