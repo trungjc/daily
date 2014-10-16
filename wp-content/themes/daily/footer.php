@@ -1,10 +1,30 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
                             <div class="container">
+                               
+                                 
+                                <div class="follow-us-container">
+                                   <img src="<?php echo get_template_directory_uri(); ?>/img/food-trust.png" >     
+                                    <div class="clearfix">
+                                        <div class="pull-right follow-us">
+                                        <a href="" class="tiwtter">tiwtter</a>
+                                        <a href="" class="facebook">facebook</a>
+                                        </div>
+                                        Follow us on twitter or facebook to get our latest delivery updates
+                                    </div>
+                                    
+                                </div>
+                                <div class="footer-widget">
+                                    <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
+                                </div>
+
                                 <!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+                                    <a href="" >Privacy</a>  
+                                    <a href="" >   Site Map  </a>  
+                                     <a href="" >©2014 Daily Groceries Co-op </a>  
+                                         <a href="" >Designed by Lightmark Media  </a>  
+                                             <a href="" >Developed by picobarn </a>  
 				</p>
 				<!-- /copyright -->
                             </div>
