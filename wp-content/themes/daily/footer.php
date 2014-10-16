@@ -18,15 +18,7 @@
                                     <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
                                 </div>
 
-                                <!-- copyright -->
-				<p class="copyright">
-                                    <a href="" >Privacy</a>  
-                                    <a href="" >   Site Map  </a>  
-                                     <a href="" >©2014 Daily Groceries Co-op </a>  
-                                         <a href="" >Designed by Lightmark Media  </a>  
-                                             <a href="" >Developed by picobarn </a>  
-				</p>
-				<!-- /copyright -->
+                              
                             </div>
 				
 
@@ -47,6 +39,20 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
+<script>
+jQuery(function($) {
+$('.navbar .dropdown').hover(function() {
+$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
 
+}, function() {
+$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+});
+
+$('.navbar .dropdown > a').click(function(){  
+location.href = this.href;
+});
+
+});</script>
 	</body>
 </html>

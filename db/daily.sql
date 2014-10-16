@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 16, 2014 at 06:08 PM
+-- Generation Time: Oct 16, 2014 at 06:23 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -183,7 +183,7 @@ INSERT INTO `jc_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (77, 'comment_order', 'asc', 'yes'),
 (78, 'sticky_posts', 'a:0:{}', 'yes'),
 (79, 'widget_categories', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(80, 'widget_text', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:4:"text";s:174:"<h2>FEEDBACK</h2>\r\n<div class="title">Drop a Comment</div>\r\n<p>Nunc magna eros, facilisis eu tempus eu, posuere nec magna. </p>\r\n[contact-form-7 id="35" title="Contact form"]";s:6:"filter";b:0;}s:12:"_multiwidget";i:1;}', 'yes'),
+(80, 'widget_text', 'a:3:{i:2;a:3:{s:5:"title";s:0:"";s:4:"text";s:174:"<h2>FEEDBACK</h2>\r\n<div class="title">Drop a Comment</div>\r\n<p>Nunc magna eros, facilisis eu tempus eu, posuere nec magna. </p>\r\n[contact-form-7 id="35" title="Contact form"]";s:6:"filter";b:0;}i:3;a:3:{s:5:"title";s:0:"";s:4:"text";s:504:"  <!-- copyright -->\r\n				<p class="copyright">\r\n                                    <a href="" >Privacy</a>  \r\n                                    <a href="" >   Site Map  </a>  \r\n                                     <a href="" >©2014 Daily Groceries Co-op </a>  \r\n                                    <a href="" >Designed by Lightmark Media  </a>  \r\n                                       \r\n                                    <a href="" >Developed by picobarn </a>  \r\n				</p>\r\n				<!-- /copyright -->";s:6:"filter";b:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (81, 'widget_rss', 'a:0:{}', 'yes'),
 (82, 'uninstall_plugins', 'a:0:{}', 'no'),
 (83, 'timezone_string', '', 'yes'),
@@ -198,7 +198,7 @@ INSERT INTO `jc_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (92, 'widget_recent-comments', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (93, 'widget_archives', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (94, 'widget_meta', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(95, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:13:"widget-area-1";a:2:{i:0;s:14:"sticky-posts-2";i:1;s:6:"text-2";}s:13:"widget-area-2";a:0:{}s:13:"widget-area-3";a:1:{i:0;s:10:"nav_menu-2";}s:13:"array_version";i:3;}', 'yes'),
+(95, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:13:"widget-area-1";a:2:{i:0;s:14:"sticky-posts-2";i:1;s:6:"text-2";}s:13:"widget-area-2";a:0:{}s:13:"widget-area-3";a:2:{i:0;s:10:"nav_menu-2";i:1;s:6:"text-3";}s:13:"array_version";i:3;}', 'yes'),
 (96, 'cron', 'a:9:{i:1413478862;a:1:{s:26:"upgrader_scheduled_cleanup";a:1:{s:32:"4334b88fe3501b2f0e4f630eb24f7ca5";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:26;}}}}i:1413478918;a:1:{s:26:"upgrader_scheduled_cleanup";a:1:{s:32:"4fde22776ee75e22ac8342be3aa0c974";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:27;}}}}i:1413479045;a:1:{s:26:"upgrader_scheduled_cleanup";a:1:{s:32:"17f415781210aaa50f7cb291eccfc7af";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:28;}}}}i:1413480756;a:1:{s:26:"upgrader_scheduled_cleanup";a:1:{s:32:"b76accc01229b487518cb150a88235da";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:34;}}}}i:1413488040;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1413496731;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1413539944;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1413541731;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (98, '_transient_random_seed', '280d459b2941ec3433df67f2bcd6fbf0', 'yes'),
 (99, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.0.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.0.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.0-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.0-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.0";s:7:"version";s:3:"4.0";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1413473559;s:15:"version_checked";s:3:"4.0";s:12:"translations";a:0:{}}', 'yes'),
