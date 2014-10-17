@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container main-layout index-layout">
 	<div class="row">
-		<main role="main" class="col-md-8" >
+		<main role="main" class="col-sm-8 col-xs-12" >
 		<!-- section -->
 		<section>
 

@@ -2,7 +2,7 @@
 <div class="slideshow"><?php putRevSlider("home")?></div>
 <div class="container main-layout page-layout">
 	<div class="row">
-	<main role="main" class="col-md-8" >
+	<main role="main" class="col-md-8 col-sm-8 col-xs-12" >
 		<!-- section -->
                 <section class="home-content">
 
