@@ -73,7 +73,7 @@ body {
 
 /* main*/
 .container {
-   max-width:1060px;
+    width:1060px;
 }
 /* header */
 header {
@@ -241,7 +241,7 @@ header {
             h2 {
                 font-size: 18px;
                 font-style: italic;
-                 margin-bottom: 0px;
+                margin-bottom: 0px;
             }
             .wpcf7-form {
                 width:100%;
@@ -308,7 +308,117 @@ header {
         }
     }
 }
-
+/* Food you can trust */
+.food-you-can-trust {
+    .main-layout {
+        main {
+            margin-top:44px;
+            section {
+                h1 {
+                    display:none;
+                }
+                .media {
+                    border-bottom:2px solid #006a72;
+                    padding-bottom:40px;
+                    margin-bottom:30px;
+                    a {
+                        color:#b42c33;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    h3 {
+                        font-size:30px;
+                        font-weight:800;
+                        margin-top:0px;
+                    }
+                    dl {
+                        dt {
+                            font-size: 22px;
+                            margin-top:20px;
+                            span {
+                                font-size:18px;
+                                font-weight: normal;
+                            } 
+                        }
+                        dd {
+                            margin-bottom:30px;
+                        }
+                    }
+                    ul {
+                        padding-top:20px;
+                        padding-bottom: 20px;
+                        li {
+                            font-weight:bold;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        aside.sidebar {
+            margin-top:44px; 
+            .gift-card {
+                background:url('@{path-img}/bg-frm-giftcard.png') no-repeat top left;
+                width: 325px;
+                height: 270px;
+                .gift-card-inner {
+                    padding: 20px 10px 0 32px;
+                    color: #fbefa5;
+                    h3 {
+                        font-size:30px;
+                        font-weight:bold;
+                    }
+                    a {
+                        background:url('@{path-img}/btn-give.jpg') no-repeat top left;
+                        width:258px;
+                        height: 44px;
+                        color:#fbefa5;
+                        margin-top:15px;
+                        padding: 4px 0 0 16px;
+                        font-size:24px;
+                        display: block;
+                    }
+                }
+            }
+            #text-6 {
+                border-bottom:2px solid #006a72;
+                padding-bottom:30px;
+                margin-bottom:10px;
+                .bx-wrapper {
+                    .bx-controls {
+                        display:none;
+                    }
+                    .bx-viewport {
+                        blockquote {
+                            border-left:none;
+                            color: #108c95;
+                            font-style: italic;
+                            font-weight: bold;
+                            margin-top:25px;
+                            margin-bottom:0px;
+                        }
+                    }
+                    .credit {
+                        position: absolute;
+                        top:0px;
+                        left:20px;
+                        text-transform: uppercase;
+                        &:before,&:after {
+                            content:"";
+                        }
+                    }
+                }
+                a {
+                    color:#b42c33;
+                    margin-left: 10px;  
+                }
+            }
+        }
+    }
+}
 /* footer */
 footer {
     margin-top:40px;
@@ -361,7 +471,7 @@ footer {
                         }
                     }
                 }
-                
+
             }
         }
         .textwidget {
@@ -377,22 +487,11 @@ footer {
 }
 
 
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-    display: none;
-}
 
-blockquote {
-    border: none;
-    padding:0;
-    
-}
-.gift-card {
-    margin: 0 0 15px;
-}
 
-.button-gift {
-    display: block;
-}
+
+
+
 
 
 

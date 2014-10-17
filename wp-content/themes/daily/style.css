@@ -7811,7 +7811,7 @@ body {
 }
 /* main*/
 .container {
-  max-width: 1060px;
+  width: 1060px;
 }
 /* header */
 header {
@@ -8066,6 +8066,106 @@ header .top-bar .logo {
   font-size: 14px;
   margin-bottom: 0px;
 }
+/* Food you can trust */
+.food-you-can-trust .main-layout main {
+  margin-top: 44px;
+}
+.food-you-can-trust .main-layout main section h1 {
+  display: none;
+}
+.food-you-can-trust .main-layout main section .media {
+  border-bottom: 2px solid #006a72;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+.food-you-can-trust .main-layout main section .media a {
+  color: #b42c33;
+}
+.food-you-can-trust .main-layout main section .media a:hover {
+  text-decoration: underline;
+}
+.food-you-can-trust .main-layout main section .media h3 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 0px;
+}
+.food-you-can-trust .main-layout main section .media dl dt {
+  font-size: 22px;
+  margin-top: 20px;
+}
+.food-you-can-trust .main-layout main section .media dl dt span {
+  font-size: 18px;
+  font-weight: normal;
+}
+.food-you-can-trust .main-layout main section .media dl dd {
+  margin-bottom: 30px;
+}
+.food-you-can-trust .main-layout main section .media ul {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.food-you-can-trust .main-layout main section .media ul li {
+  font-weight: bold;
+}
+.food-you-can-trust .main-layout main section .media:last-child {
+  border-bottom: none;
+}
+.food-you-can-trust .main-layout aside.sidebar {
+  margin-top: 44px;
+}
+.food-you-can-trust .main-layout aside.sidebar .gift-card {
+  background: url('img/bg-frm-giftcard.png') no-repeat top left;
+  width: 325px;
+  height: 270px;
+}
+.food-you-can-trust .main-layout aside.sidebar .gift-card .gift-card-inner {
+  padding: 20px 10px 0 32px;
+  color: #fbefa5;
+}
+.food-you-can-trust .main-layout aside.sidebar .gift-card .gift-card-inner h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.food-you-can-trust .main-layout aside.sidebar .gift-card .gift-card-inner a {
+  background: url('img/btn-give.jpg') no-repeat top left;
+  width: 258px;
+  height: 44px;
+  color: #fbefa5;
+  margin-top: 15px;
+  padding: 4px 0 0 16px;
+  font-size: 24px;
+  display: block;
+}
+.food-you-can-trust .main-layout aside.sidebar #text-6 {
+  border-bottom: 2px solid #006a72;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+.food-you-can-trust .main-layout aside.sidebar #text-6 .bx-wrapper .bx-controls {
+  display: none;
+}
+.food-you-can-trust .main-layout aside.sidebar #text-6 .bx-wrapper .bx-viewport blockquote {
+  border-left: none;
+  color: #108c95;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+.food-you-can-trust .main-layout aside.sidebar #text-6 .bx-wrapper .credit {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  text-transform: uppercase;
+}
+.food-you-can-trust .main-layout aside.sidebar #text-6 .bx-wrapper .credit:before,
+.food-you-can-trust .main-layout aside.sidebar #text-6 .bx-wrapper .credit:after {
+  content: "";
+}
+.food-you-can-trust .main-layout aside.sidebar #text-6 a {
+  color: #b42c33;
+  margin-left: 10px;
+}
 /* footer */
 footer {
   margin-top: 40px;
@@ -8121,19 +8221,6 @@ footer .footer-bottom .textwidget {
 footer .footer-bottom .textwidget p a {
   color: #004c52;
   border-left-color: #004c52;
-}
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-  display: none;
-}
-blockquote {
-  border: none;
-  padding: 0;
-}
-.gift-card {
-  margin: 0 0 15px;
-}
-.button-gift {
-  display: block;
 }
 .pd30 {
   padding: 30px;
