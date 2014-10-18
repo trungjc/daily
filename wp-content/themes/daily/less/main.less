@@ -71,10 +71,6 @@ body {
 }
 
 
-/* main*/
-.container {
-    width:1060px;
-}
 /* header */
 header {
     background: url('@{path-img}/bg-header.jpg') repeat-x top left;
@@ -358,65 +354,177 @@ header {
                 }
             }
         }
-        aside.sidebar {
-            margin-top:44px; 
-            .gift-card {
-                background:url('@{path-img}/bg-frm-giftcard.png') no-repeat top left;
-                width: 325px;
-                height: 270px;
-                .gift-card-inner {
-                    padding: 20px 10px 0 32px;
-                    color: #fbefa5;
-                    h3 {
-                        font-size:30px;
-                        font-weight:bold;
-                    }
+
+    }
+}
+/* category news */
+.category-news {
+    main {
+        h1 {
+            display:none;
+        }
+        margin-top:40px;
+        section {
+            article {
+                >a {
+                    float:left;
+                    margin-right:20px;
+                }
+                span.date,span.comments,span.author {
+                    color:#999;
+                    font-size:13px;
+                }
+                span.author {
                     a {
-                        background:url('@{path-img}/btn-give.jpg') no-repeat top left;
-                        width:258px;
-                        height: 44px;
-                        color:#fbefa5;
-                        margin-top:15px;
-                        padding: 4px 0 0 16px;
-                        font-size:24px;
-                        display: block;
+                        color: #004c52;
                     }
-                }
-            }
-            #text-6 {
-                border-bottom:2px solid #006a72;
-                padding-bottom:30px;
-                margin-bottom:10px;
-                .bx-wrapper {
-                    .bx-controls {
-                        display:none;
-                    }
-                    .bx-viewport {
-                        blockquote {
-                            border-left:none;
-                            color: #108c95;
-                            font-style: italic;
-                            font-weight: bold;
-                            margin-top:25px;
-                            margin-bottom:0px;
-                        }
-                    }
-                    .credit {
-                        position: absolute;
-                        top:0px;
-                        left:20px;
-                        text-transform: uppercase;
-                        &:before,&:after {
-                            content:"";
-                        }
-                    }
-                }
-                a {
-                    color:#b42c33;
-                    margin-left: 10px;  
                 }
             }
         }
+    }
+
+}
+/* contact us */
+.contact-us {
+    main {
+        h1 {
+            display:none;
+        }
+        margin-top:30px;
+        article {
+            h3 {
+                font-size:30px;
+                font-weight: bold;
+                line-height: 36px;
+            }
+            .action-box {
+                clear:both;
+                margin:0px 15px;
+                background:#006a72;
+                color:#fbefa5;
+                float:left;
+                -webkit-box-shadow: 2px 2px 5px 5px #C4C4C4;
+                box-shadow: 2px 2px 5px 5px #C4C4C4;
+                .inner-box-action {
+                    border:2px solid #eed881;
+                    margin:8px;
+                    padding:10px;
+                    h3 {
+                        margin-top:0px;
+                    }
+                    a {
+                        background: url('@{path-img}/btn-give.jpg') no-repeat top left;
+                        width:258px;
+                        height: 44px;
+                        color:#fbefa5;
+                        display: block;
+                        font-size: 24px;
+                        padding-left: 17px;
+                        padding-top: 3px;
+                    }
+                }
+            }
+            .media {
+                dl {
+                    dt {
+                        font-size: 18px;
+                        font-weight: normal;
+                        margin-top:20px;
+                    }
+                    dd {
+                        font-size:22px;
+                        font-weight: bold;
+                        margin-bottom:30px;
+                        a {
+                            text-decoration: underline;
+                            color: #004c52;
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        margin-top:35px;
+                        span {
+                            font-size:18px;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font-weight: bold;
+                            font-style: italic;
+                            font-size:22px;
+                            color:#108c95;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+/* sidebar public */
+aside.sidebar {
+    margin-top:44px; 
+    .gift-card {
+        background:url('@{path-img}/bg-frm-giftcard.png') no-repeat top left;
+        width: 325px;
+        height: 270px;
+        .gift-card-inner {
+            padding: 20px 10px 0 32px;
+            color: #fbefa5;
+            h3 {
+                font-size:30px;
+                font-weight:bold;
+            }
+            a {
+                background:url('@{path-img}/btn-give.jpg') no-repeat top left;
+                width:258px;
+                height: 44px;
+                color:#fbefa5;
+                margin-top:15px;
+                padding: 4px 0 0 16px;
+                font-size:24px;
+                display: block;
+            }
+        }
+    }
+    #text-6 {
+        border-bottom:2px solid #006a72;
+        padding-bottom:30px;
+        margin-bottom:10px;
+        .bx-wrapper {
+            padding-top:20px;
+            .bx-controls {
+                display:none;
+            }
+            .bx-viewport {
+                blockquote {
+                    border-left:none;
+                    color: #108c95;
+                    font-style: italic;
+                    font-weight: bold;
+                    margin-top:25px;
+                    margin-bottom:0px;
+                }
+            }
+            .credit {
+                position: absolute;
+                top:0px;
+                left:20px;
+                text-transform: uppercase;
+                &:before,&:after {
+                    content:"";
+                }
+            }
+        }
+        a {
+            color:#b42c33;
+            margin-left: 10px;  
+        }
+    }
+}
+.home {
+    aside.sidebar {
+        margin-top:0px;
     }
 }
 /* footer */
