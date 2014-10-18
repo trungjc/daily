@@ -30,7 +30,9 @@
 
                                 <?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 
-
+                                <div>
+                                    <a class="readmore" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> <?php echo get_post_meta($post->ID, 'read-more-text', true); ?></a>
+                                </div>       
                         </article>
                         <!-- /article -->
 
