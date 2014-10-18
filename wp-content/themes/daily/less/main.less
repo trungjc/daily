@@ -188,6 +188,11 @@ header {
                 &:nth-child(2n) {
                     margin-right:0px;
                 }
+                div {
+                    a {
+                        color:#b42c33;
+                    }
+                }
             }
         }
     }
@@ -365,19 +370,24 @@ header {
         }
         margin-top:40px;
         section {
+            margin-top:5px;
             article {
-                >a {
-                    float:left;
-                    margin-right:20px;
-                }
-                span.date,span.comments,span.author {
-                    color:#999;
-                    font-size:13px;
-                }
-                span.author {
-                    a {
-                        color: #004c52;
+                border-bottom: 2px solid #006a72; 
+                margin-bottom: 30px;
+                padding-bottom: 40px;
+                .media {
+                    .media-body {
+                        h2 {
+                            margin-top:0px;
+                            a {
+                                font-weight:bold;
+                                color:#004c52; 
+                            }
+                        }
                     }
+                }
+                &:last-child {
+                    border-bottom:none;
                 }
             }
         }
