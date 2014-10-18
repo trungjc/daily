@@ -27,7 +27,7 @@
                                 <!-- /post title -->
 
 
-<?php the_content(); // Dynamic Content ?>
+                                <?php the_content(); // Dynamic Content ?>
                                  
                                 </div>
                             </div>
