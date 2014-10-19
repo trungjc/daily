@@ -1,10 +1,19 @@
 // style.less combile to style.css
 @media screen and (max-width:1024px) {
-    /* home page */
-    header {
+    /* home page */header .navbar-top-box nav ul li {
+    border: medium none;
+    text-align: left;
+}
+.right-top .title {
+    font-size: 35px;
+}
+header .top-bar {
+    height: auto;
+}
+    header {background-size: cover;
         .top-bar {
             .logo {
-                overflow: hidden;
+               
             }
         }
         .navbar-top-box {
@@ -102,53 +111,7 @@
     /* end sidebar */
 }
 @media screen and (min-width:769px) and (max-width:1023px) {
-    .sidebar {
-        .sidebar-widget {
-            .widget_text {
-                .textwidget {
-                    .wpcf7-form {
-                        background-size: 103%;
-                        background-position: -4px 0px;
-                        input[type='email'],input[type='text'] {
-                            font-size: 14px;
-                            margin-top: 3px;
-                            margin-left:24px;
-                        }
-                        input[type='text'] {
-                            margin-top: 25px; 
-                        }
-                        textarea {
-                            margin-top: 3px;
-                            height: 100px;
-                            font-size: 14px;
-                            margin-left:24px;
-                        }
-                        .clearfix {
-                            input[type='submit'] {
-                                background-size: 83%;
-                                font-size: 21px;
-                                height: 34px;
-                                margin-right: 18px;
-                                margin-top: -8px;
-                                padding-right: 33px;
-                                width: 110px;
-                            }
-                            p {
-                                display:none;
-                            }
-                            a {
-                                font-size:13px; 
-                                display:none;
-                            }
-                        }
-                        .wpcf7-validation-errors {
-                            margin-top:48px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+     
     /* footer */
     footer {
         .sub-footer {
@@ -175,10 +138,65 @@
         }
     }
     /* end footer */
+header .navbar-top-box nav #navbarCollapse ul li a {
+    font-size: 12px; 
+}
 }
 
 /* 768 px*/
 @media screen and (max-width:@screen-sm) {
+header .top-bar .right-top {
+    float: none!important;
+    padding: 0;background: none; text-align: center!important;
+    * {
+        text-align: center!important;
+    }
+}
+header {
+    background: url("img/bg-header.jpg") repeat-x scroll left top rgba(0, 0, 0, 0);
+    background-size: cover;
+    text-align: center;
+}
+header .navbar-top-box {
+    height: 54px;
+}
+.slideshow .rev_slider_wrapper .tp-simpleresponsive ul li .tp-caption.medium_bg_red{padding:4px!important ;margin-top:15px!important}
+header .navbar-top-box nav #navbarCollapse {
+    background: none repeat scroll 0 0 black;
+    margin: 0 -16px;
+    padding: 0;
+    position: relative;
+    z-index: 999;
+}
+header .navbar-top-box nav ul li {border:none;}
+header .navbar-top-box nav ul li .dropdown-menu {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    display: block !important;
+    float: none;
+    margin-left: 20px;
+    position: static !important;}
+
+header .navbar-top-box nav ul li .dropdown-menu {
+    display: block!important;
+}
+header .navbar-top-box nav #navbarCollapse ul li a {
+    padding: 5px 30px;
+}
+header .navbar-top-box nav #navbarCollapse ul li a {
+    font-size: 12px; 
+}
+.footer-widget .menu li {display:block;float: none;margin:20px 0;
+    a {border:none!important;}
+    ul {margin-left:40px;}
+}
+footer .sub-footer {
+    height: auto;padding: 10px 0px
+}
+    img {max-width:100%;}
+.sidebar {
+    background-size: 100%;
+}
     .home {
         .main-layout{
             .home-content {
@@ -207,49 +225,7 @@
                     }
                 }
             }
-            .widget_text {
-                .textwidget {
-                    .wpcf7-form {
-                        background-size: 103%;
-                        background-position: -4px 0px;
-                        input[type='email'],input[type='text'] {
-                            font-size: 14px;
-                            margin-top: 3px;
-                            margin-left:24px;
-                        }
-                        input[type='text'] {
-                            margin-top: 25px; 
-                        }
-                        textarea {
-                            margin-top: 3px;
-                            height: 100px;
-                            font-size: 14px;
-                            margin-left:24px;
-                        }
-                        .clearfix {
-                            input[type='submit'] {
-                                background-size: 83%;
-                                font-size: 21px;
-                                height: 34px;
-                                margin-right: 18px;
-                                margin-top: -8px;
-                                padding-right: 33px;
-                                width: 110px;
-                            }
-                            p {
-                                display:none;
-                            }
-                            a {
-                                font-size:13px; 
-                                display:none;
-                            }
-                        }
-                        .wpcf7-validation-errors {
-                            margin-top:48px;
-                        }
-                    }
-                }
-            }
+            
         }
     }
     /* end sidebar */
@@ -281,6 +257,9 @@
     /* end footer */
 }
 @media screen and (max-width:@screen-xs) {
+.media {text-align: center;
+.pull-left,.pull-right {float:none!important;margin:20px 0;    display: block;}
+}
     header {
         .top-bar {
             height: auto;
@@ -298,43 +277,7 @@
             .logo {
                 margin-top:10px;
                 img{
-                    width:70%;
-                }
-            }
-        }
-    }
-    .sidebar {
-        .sidebar-widget {
-            .widget_ultimate_posts {
-                .upw-posts.hfeed {
-                    article{
-                        header{
-                            .entry-image {
-                                text-align:center;
-                                a {
-                                    img {
-                                        width:auto;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .widget_text {
-                .textwidget {
-                    .wpcf7-form {
-                        background-size:contain;
-                        background-position: center center;
-                        input[type='text'],input[type='email'] {
-                            width:54%;
-                            margin-left: 105px; 
-                        }
-                        textarea {
-                            margin-left:105px;
-                            width:54%;  
-                        }
-                    }
+                   margin:10px 0;
                 }
             }
         }
@@ -369,13 +312,7 @@
         }
     }
     footer {
-        .sub-footer {
-            .container {
-                span {
-                    display:none;
-                }
-            }
-        }
+        
         .footer-bottom {
             .container {
                 .footer-widget{
