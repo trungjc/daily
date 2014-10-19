@@ -83,6 +83,7 @@ header {
             min-height:38px;
             border-top:2px solid #eed881;
             border-bottom:2px solid #eed881;
+            border-radius: 0;
             ul {
                 li {
                     border-left:2px solid #eed881;
@@ -387,7 +388,7 @@ header {
                     }
                 }
                 &:last-child {
-                    border-bottom:none;
+                    background: #fff;
                 }
             }
         }
@@ -451,18 +452,27 @@ header {
                         }
                     }
                 }
-                ul {
-                    li {
-                        margin-top:35px;
-                        span {
+                .testimonials-widget-testimonials {
+                    .testimonials-widget-testimonial.list {
+                        margin-bottom:20px;
+                        position:relative;
+                        .credit {
+                            position: absolute;
+                            top:0px;
                             font-size:18px;
-                            text-transform: uppercase;
+                            text-transform:uppercase;
+                            &:before {
+                                content:"";
+                            }
                         }
-                        p {
+                        blockquote {
+                            font-size:22px;
                             font-weight: bold;
                             font-style: italic;
-                            font-size:22px;
-                            color:#108c95;
+                            padding-top:30px;
+                            border-left:none;
+                            padding-left: 0;
+                            color: #108c95;
                         }
                     }
                 }

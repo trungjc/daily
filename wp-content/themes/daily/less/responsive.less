@@ -1,1 +1,404 @@
 // style.less combile to style.css
+@media screen and (max-width:1024px) {
+    /* home page */
+    header {
+        .top-bar {
+            .logo {
+                overflow: hidden;
+            }
+        }
+        .navbar-top-box {
+            nav {
+                #navbarCollapse {
+                    padding-left:0px;
+                    ul {
+                        li {
+                            a {
+                                font-size:14px;
+                                padding: 0 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home {
+        .main-layout{
+            .home-content {
+                article {
+                    width: 47.5%;
+                    h2 {
+                        a {
+                            font-size:27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* slideshow */
+    .slideshow {
+        .rev_slider_wrapper {
+            .tp-simpleresponsive {
+                ul {
+                    li {
+                        .tp-caption.medium_bg_red {
+                            font-size:25px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* end slideshow */
+    /* sidebar */
+    .sidebar {
+        .sidebar-widget {
+            .widget_ultimate_posts {
+                .upw-posts.hfeed {
+                    article {
+                        header {
+                            h4 {
+                                font-size:27px;
+                            }
+                        }
+                    }
+                }
+            }
+            .widget_text {
+                .textwidget {
+                    .title {
+                        font-size: 45px;
+                    }
+                    .wpcf7-form {
+                        background-size: 103%;
+                        background-position: -4px 0px;
+                        input[type='email'],input[type='text'] {
+                            font-size: 14px;
+                            margin-top: 3px;
+                        }
+                        input[type='text'] {
+                            margin-top: 25px; 
+                        }
+                        textarea {
+                            margin-top: 3px;
+                            height: 100px;
+                            font-size: 14px;
+                        }
+                        .clearfix {
+                            a {
+                                font-size:13px; 
+                            }
+                        }
+                        .wpcf7-validation-errors {
+                            margin-top:48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* end sidebar */
+}
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .sidebar {
+        .sidebar-widget {
+            .widget_text {
+                .textwidget {
+                    .wpcf7-form {
+                        background-size: 103%;
+                        background-position: -4px 0px;
+                        input[type='email'],input[type='text'] {
+                            font-size: 14px;
+                            margin-top: 3px;
+                            margin-left:24px;
+                        }
+                        input[type='text'] {
+                            margin-top: 25px; 
+                        }
+                        textarea {
+                            margin-top: 3px;
+                            height: 100px;
+                            font-size: 14px;
+                            margin-left:24px;
+                        }
+                        .clearfix {
+                            input[type='submit'] {
+                                background-size: 83%;
+                                font-size: 21px;
+                                height: 34px;
+                                margin-right: 18px;
+                                margin-top: -8px;
+                                padding-right: 33px;
+                                width: 110px;
+                            }
+                            p {
+                                display:none;
+                            }
+                            a {
+                                font-size:13px; 
+                                display:none;
+                            }
+                        }
+                        .wpcf7-validation-errors {
+                            margin-top:48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* footer */
+    footer {
+        .sub-footer {
+            font-size:20px;
+        }
+        .footer-bottom {
+            background-size: cover;
+            padding-top:20px;
+            .footer-widget {
+                ul.menu {
+                    li {
+                        &:nth-child(3n) {
+                            clear:right;
+                        }
+                        &:nth-child(4n) {
+                            clear:left;
+                            >a {
+                                border-left:none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* end footer */
+}
+
+/* 768 px*/
+@media screen and (max-width:@screen-sm) {
+    .home {
+        .main-layout{
+            .home-content {
+                article {
+                    h2 {
+                        a {
+                            font-size: 25px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* sidebar */
+    .sidebar {
+        .sidebar-widget {
+            .widget_ultimate_posts {
+                .upw-posts.hfeed {
+                    article {
+                        header {
+                            h4 {
+                                font-size:25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .widget_text {
+                .textwidget {
+                    .wpcf7-form {
+                        background-size: 103%;
+                        background-position: -4px 0px;
+                        input[type='email'],input[type='text'] {
+                            font-size: 14px;
+                            margin-top: 3px;
+                            margin-left:24px;
+                        }
+                        input[type='text'] {
+                            margin-top: 25px; 
+                        }
+                        textarea {
+                            margin-top: 3px;
+                            height: 100px;
+                            font-size: 14px;
+                            margin-left:24px;
+                        }
+                        .clearfix {
+                            input[type='submit'] {
+                                background-size: 83%;
+                                font-size: 21px;
+                                height: 34px;
+                                margin-right: 18px;
+                                margin-top: -8px;
+                                padding-right: 33px;
+                                width: 110px;
+                            }
+                            p {
+                                display:none;
+                            }
+                            a {
+                                font-size:13px; 
+                                display:none;
+                            }
+                        }
+                        .wpcf7-validation-errors {
+                            margin-top:48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* end sidebar */
+    /* footer */
+    footer {
+        .sub-footer {
+            font-size:20px;
+        }
+        .footer-bottom {
+            background-size: cover;
+            padding-top:20px;
+            .footer-widget {
+                ul.menu {
+                    li {
+                        &:nth-child(3n) {
+                            clear:right;
+                        }
+                        &:nth-child(4n) {
+                            clear:left;
+                            >a {
+                                border-left:none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* end footer */
+}
+@media screen and (max-width:@screen-xs) {
+    header {
+        .top-bar {
+            height: auto;
+            .right-top {
+                padding-right:0px;
+                background:none;
+                margin-top:0px;
+                .title {
+                    font-size:33px;
+                }
+                .info {
+                    font-size:16px;
+                }
+            }
+            .logo {
+                margin-top:10px;
+                img{
+                    width:70%;
+                }
+            }
+        }
+    }
+    .sidebar {
+        .sidebar-widget {
+            .widget_ultimate_posts {
+                .upw-posts.hfeed {
+                    article{
+                        header{
+                            .entry-image {
+                                text-align:center;
+                                a {
+                                    img {
+                                        width:auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .widget_text {
+                .textwidget {
+                    .wpcf7-form {
+                        background-size:contain;
+                        background-position: center center;
+                        input[type='text'],input[type='email'] {
+                            width:54%;
+                            margin-left: 105px; 
+                        }
+                        textarea {
+                            margin-left:105px;
+                            width:54%;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home {
+        .main-layout {
+            .home-content {
+                article {
+                    text-align: center;
+                    width:100%;
+                    p,h2 {
+                        text-align: left;
+                    }
+                    div {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .slideshow {
+        .rev_slider_wrapper{
+            .tp-simpleresponsive {
+                ul {
+                    li {
+                        .tp-caption.medium_bg_red{
+                            font-size:18px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .sub-footer {
+            .container {
+                span {
+                    display:none;
+                }
+            }
+        }
+        .footer-bottom {
+            .container {
+                .footer-widget{
+                    .widget_nav_menu {
+                        ul {
+                            li {
+                                float:none;
+                                >a {
+                                    border-left:none;
+                                }
+                            }
+                        }
+                    }
+                    .widget_text {
+                        p {
+                            a {
+                                font-size:14px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

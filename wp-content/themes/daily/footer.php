@@ -5,7 +5,7 @@
         </div>
     <div class="sub-footer">
         <div class="container">
-                Follow us on twitter or facebook to get our latest delivery updates
+            <span>Follow us on twitter or facebook to get our latest delivery updates</span>
                 <div class="follow-us">
                     <a href="" class="tiwtter">tiwtter</a>
                     <a href="" class="facebook">facebook</a>
