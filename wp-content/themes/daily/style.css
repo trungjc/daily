@@ -8634,6 +8634,14 @@ footer .footer-bottom .textwidget p a {
   footer .footer-bottom .container .footer-widget .widget_text p a {
     font-size: 14px;
   }
+  footer .sub-footer .container .follow-us {
+    display: block;
+  }
+  /* contact us*/
+  .contact-us .main-layout main section article .media .action-box p a {
+    text-align: left;
+    padding-left: 15px;
+  }
 }
 .pd30 {
   padding: 30px;
