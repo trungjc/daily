@@ -8386,10 +8386,6 @@ footer .footer-bottom .textwidget p a {
   .sidebar .sidebar-widget .widget_text .textwidget .title {
     font-size: 45px;
   }
-  .sidebar .sidebar-widget .widget_text .textwidget .wpcf7-form {
-    background-size: 103%;
-    background-position: -4px 0px;
-  }
   .sidebar .sidebar-widget .widget_text .textwidget .wpcf7-form input[type='email'],
   .sidebar .sidebar-widget .widget_text .textwidget .wpcf7-form input[type='text'] {
     font-size: 14px;
@@ -8478,6 +8474,9 @@ footer .footer-bottom .textwidget p a {
   .sidebar {
     background-size: 100%;
   }
+  header .top-bar .right-top {
+    padding-bottom: 15px;
+  }
   .home .main-layout .home-content article h2 a {
     font-size: 25px;
     line-height: 30px;
@@ -8485,6 +8484,15 @@ footer .footer-bottom .textwidget p a {
   /* sidebar */
   .sidebar .sidebar-widget .widget_ultimate_posts .upw-posts.hfeed article header h4 {
     font-size: 25px;
+  }
+  .sidebar .sidebar-widget .widget_text .textwidget .wpcf7-form input[type="text"] {
+    margin-top: 0px;
+  }
+  .sidebar .sidebar-widget .widget_text .textwidget .wpcf7-form span.wpcf7-not-valid-tip {
+    margin-left: 0px;
+  }
+  .sidebar .sidebar-widget .widget_text .textwidget .wpcf7-form input[type='submit'] {
+    margin-top: 0px !important;
   }
   /* end sidebar */
   /* footer */
@@ -8505,6 +8513,13 @@ footer .footer-bottom .textwidget p a {
     border-left: none !important;
   }
   /* end footer */
+  .category-news .main-layout main section article .media a.pull-right {
+    float: none !important;
+  }
+  .category-news .main-layout main section article .media .media-body {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 /* 768 px*/
 @media screen and (max-width: 767px) {

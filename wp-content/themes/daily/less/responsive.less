@@ -1,36 +1,36 @@
 // style.less combile to style.css
 @media screen and (max-width:1024px) {
     /* home page */header .navbar-top-box nav ul li {
-    border: medium none;
-    text-align: left;
-}
-.right-top .title {
-    font-size: 35px;
-}
-header .top-bar {
-    height: auto;
-}
+        border: medium none;
+        text-align: left;
+    }
+    .right-top .title {
+        font-size: 35px;
+    }
+    header .top-bar {
+        height: auto;
+    }
     header {background-size: cover;
-        .top-bar {
-            .logo {
-               
+            .top-bar {
+                .logo {
+
+                }
             }
-        }
-        .navbar-top-box {
-            nav {
-                #navbarCollapse {
-                    padding-left:0px;
-                    ul {
-                        li {
-                            a {
-                                font-size:14px;
-                                padding: 0 7px;
+            .navbar-top-box {
+                nav {
+                    #navbarCollapse {
+                        padding-left:0px;
+                        ul {
+                            li {
+                                a {
+                                    font-size:14px;
+                                    padding: 0 7px;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
     }
     .home {
         .main-layout{
@@ -81,8 +81,6 @@ header .top-bar {
                         font-size: 45px;
                     }
                     .wpcf7-form {
-                        background-size: 103%;
-                        background-position: -4px 0px;
                         input[type='email'],input[type='text'] {
                             font-size: 14px;
                             margin-top: 3px;
@@ -111,7 +109,7 @@ header .top-bar {
     /* end sidebar */
 }
 @media screen and (min-width:769px) and (max-width:1023px) {
-     aside.sidebar .gift-card .gift-card-inner a {font-size:15px;}
+    aside.sidebar .gift-card .gift-card-inner a {font-size:15px;}
     /* footer */
     footer {
         .sub-footer {
@@ -138,29 +136,37 @@ header .top-bar {
         }
     }
     /* end footer */
-header .navbar-top-box nav #navbarCollapse ul li a {
-    font-size: 12px; 
-}
+    header .navbar-top-box nav #navbarCollapse ul li a {
+        font-size: 12px; 
+    }
 }
 
 /* 768 px*/
 @media screen and (max-width:@screen-sm) {
- /* 768 px*/
+    /* 768 px*/
 
-  aside.sidebar .gift-card .gift-card-inner a {
-    font-size: 15px;
-   } 
-.footer-widget .menu li {display:block;float: none;margin:20px 0;
-    a {border:none!important;}
-    ul {margin-left:40px;}
-}
-footer .sub-footer {
-    height: auto;padding: 10px 0px
-}
+    aside.sidebar .gift-card .gift-card-inner a {
+        font-size: 15px;
+    } 
+    .footer-widget .menu li {display:block;float: none;margin:20px 0;
+                             a {border:none!important;}
+                             ul {margin-left:40px;}
+    }
+    footer .sub-footer {
+        height: auto;padding: 10px 0px
+    }
     img {max-width:100%;}
-.sidebar {
-    background-size: 100%;
-}
+    .sidebar {
+        background-size: 100%;
+    }
+    header {
+        .top-bar {
+            .right-top {
+                padding-bottom: 15px;
+            }
+        }
+    }
+
     .home {
         .main-layout{
             .home-content {
@@ -189,7 +195,21 @@ footer .sub-footer {
                     }
                 }
             }
-            
+            .widget_text{
+                .textwidget {
+                    .wpcf7-form {
+                        input[type="text"]{
+                            margin-top:0px;
+                        }
+                        span.wpcf7-not-valid-tip {
+                            margin-left:0px;
+                        }
+                        input[type='submit'] {
+                            margin-top:0px !important;
+                        }
+                    }
+                }
+            }
         }
     }
     /* end sidebar */
@@ -219,63 +239,82 @@ footer .sub-footer {
         }
     }
     /* end footer */
+    .category-news {
+        .main-layout {
+            main {
+                section {
+                    article {
+                        .media {
+                            a.pull-right {
+                                float:none !important;
+                            }
+                            .media-body {
+                                width:100%;
+                                margin-top:10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 /* 768 px*/
 @media screen and (max-width:767px) {
 
-header .top-bar .right-top {
-    float: none!important;
-    padding: 0;background: none; text-align: center!important;
-    * {
-        text-align: center!important;
+    header .top-bar .right-top {
+        float: none!important;
+        padding: 0;background: none; text-align: center!important;
+        * {
+            text-align: center!important;
+        }
     }
-}
-header {
-    background: url("img/bg-header.jpg") repeat-x scroll left top rgba(0, 0, 0, 0);
-    background-size: cover;
-    text-align: center;
-}
-header .navbar-top-box {
-    height: 54px;
-}
-.slideshow .rev_slider_wrapper .tp-simpleresponsive ul li .tp-caption.medium_bg_red{padding:4px!important ;margin-top:15px!important}
-header .navbar-top-box nav #navbarCollapse {
-    background: none repeat scroll 0 0 black;
-    margin: 0 -16px;
-    padding: 0;
-    position: relative;
-    z-index: 999;
-}
-header .navbar-top-box nav ul li {border:none;}
-header .navbar-top-box nav ul li .dropdown-menu {
-background: none ;
-    border: medium none;
-    float: none;
-    margin-left: 20px;
-    position: static !important;}
+    header {
+        background: url("img/bg-header.jpg") repeat-x scroll left top rgba(0, 0, 0, 0);
+        background-size: cover;
+        text-align: center;
+    }
+    header .navbar-top-box {
+        height: 54px;
+    }
+    .slideshow .rev_slider_wrapper .tp-simpleresponsive ul li .tp-caption.medium_bg_red{padding:4px!important ;margin-top:15px!important}
+    header .navbar-top-box nav #navbarCollapse {
+        background: none repeat scroll 0 0 black;
+        margin: 0 -16px;
+        padding: 0;
+        position: relative;
+        z-index: 999;
+    }
+    header .navbar-top-box nav ul li {border:none;}
+    header .navbar-top-box nav ul li .dropdown-menu {
+        background: none ;
+        border: medium none;
+        float: none;
+        margin-left: 20px;
+        position: static !important;}
 
-header .navbar-top-box nav ul li .dropdown-menu {
-    display: block!important;
-}
-header .navbar-top-box nav #navbarCollapse ul li a {
-    padding: 5px 30px;
-}
-header .navbar-top-box nav #navbarCollapse ul li a {
-    font-size: 12px; 
-}
-  aside.sidebar .gift-card .gift-card-inner a {background: url("img/btn-give.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
-    color: #fbefa5;
-    display: block;
-    font-size: 24px;
-    height: 44px;
-    margin-top: 15px;
-    padding: 4px 0 0 16px;
-    width: 258px;} 
+    header .navbar-top-box nav ul li .dropdown-menu {
+        display: block!important;
+    }
+    header .navbar-top-box nav #navbarCollapse ul li a {
+        padding: 5px 30px;
+    }
+    header .navbar-top-box nav #navbarCollapse ul li a {
+        font-size: 12px; 
+    }
+    aside.sidebar .gift-card .gift-card-inner a {background: url("img/btn-give.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+                                                 color: #fbefa5;
+                                                 display: block;
+                                                 font-size: 24px;
+                                                 height: 44px;
+                                                 margin-top: 15px;
+                                                 padding: 4px 0 0 16px;
+                                                 width: 258px;} 
 }
 @media screen and (max-width:@screen-xs) {
-.media {text-align: center;
-.pull-left,.pull-right {float:none!important;margin:20px 0;    display: block;}
-}
+    .media {text-align: center;
+            .pull-left,.pull-right {float:none!important;margin:20px 0;    display: block;}
+    }
     header {
         .top-bar {
             height: auto;
@@ -293,7 +332,7 @@ header .navbar-top-box nav #navbarCollapse ul li a {
             .logo {
                 margin-top:10px;
                 img{
-                   margin:10px 0;
+                    margin:10px 0;
                 }
             }
         }
@@ -328,7 +367,7 @@ header .navbar-top-box nav #navbarCollapse ul li a {
         }
     }
     footer {
-        
+
         .footer-bottom {
             .container {
                 .footer-widget{
