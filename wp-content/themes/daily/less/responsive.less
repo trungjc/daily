@@ -3,6 +3,9 @@
     /* home page */header .navbar-top-box nav ul li {
         border: medium none;
         text-align: left;
+        &:last-child {
+            border-right:none;
+        }
     }
     .right-top .title {
         font-size: 35px;
@@ -13,7 +16,7 @@
     header {background-size: cover;
             .top-bar {
                 .logo {
-
+                    
                 }
             }
             .navbar-top-box {
@@ -144,7 +147,7 @@
 /* 768 px*/
 @media screen and (max-width:@screen-sm) {
     /* 768 px*/
-
+    
     aside.sidebar .gift-card .gift-card-inner a {
         font-size: 15px;
     } 
@@ -163,6 +166,9 @@
         .top-bar {
             .right-top {
                 padding-bottom: 15px;
+                a.map {
+                    display: none;
+                }
             }
         }
     }
@@ -267,6 +273,7 @@
         padding: 0;background: none; text-align: center!important;
         * {
             text-align: center!important;
+            float:none !important;
         }
     }
     header {

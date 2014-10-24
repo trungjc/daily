@@ -88,10 +88,10 @@ header {
                 li {
                     border-left:2px solid #eed881;
                     > a {
-                        padding:0px 10px;
+                        padding:0px 15px;
                         color:#fbefa4;
                         text-transform: uppercase;
-                        font-size:20px;
+                        font-size:18px;
                         line-height: 38px;
                         &:hover,&:focus {
                             color:#006a72;
@@ -109,6 +109,9 @@ header {
                             border-right:2px solid #eed881;
                         }
                     }
+                    &:last-child {
+                        border-right:2px solid #eed881;
+                    }
                 }
             }
         }
@@ -117,15 +120,26 @@ header {
         height:194px;
         .right-top {
             margin-top:14px;
-            background:url('@{path-img}/map-athen.png') no-repeat right 15px;
-            padding-right:100px;
             .info {
                 .address {
                     text-decoration: underline;
                     text-align:  right;
+                    a {
+                        color: #004c52;
+                    }
                 }
                 .number,.time-open {
                     text-align:  right;
+                }
+            }
+            a.map {
+                background: url("img/map-athen.png") no-repeat scroll left top;
+                float: left;
+                height: 125px;
+                margin: 15px 55px 0 20px;
+                width: 94px; 
+                &:hover {
+                    opacity: .8;
                 }
             }
         }
@@ -152,7 +166,7 @@ header {
                     .tp-caption.medium_bg_red {
                         background:url('@{path-img}/bg-tp-caption.jpg') repeat-x top left;
                         font-family: "Georgia",arial;
-                        font-size:33px !important;
+                        font-size:30px !important;
                         font-weight: normal !important;
                         border:2px solid #eed881;
                         margin-top: 25px !important;
@@ -250,11 +264,11 @@ header {
                 box-shadow: 0 0 2px rgba(0,0,0,0.3);
                 padding:8px;
                 margin-bottom:15px;
-              }
+            }
             .wpcf7-form {
                 border: 2px solid #006a72;
                 padding:10px;
-               // background:url('@{path-img}/bg-frm-feedback.png') no-repeat top left;
+                // background:url('@{path-img}/bg-frm-feedback.png') no-repeat top left;
                 min-height:327px;
                 input[type='text'],input[type='email'] {
                     width:100%;
@@ -263,11 +277,11 @@ header {
                     border:none;
                     color:#959595;
                     padding:3px 7px;
-                    
+
                 }
                 .pull-left {margin-left:0!important}
                 .pull-right {
-                    
+
                     input {margin-right:0!important;}
                     img {display: none;}
                 }
@@ -407,29 +421,29 @@ header {
 
 }
 .testimonials-widget-testimonials {
-                    .testimonials-widget-testimonial.list {
-                        margin-bottom:20px;
-                        position:relative;
-                        .credit {
-                            position: absolute;
-                            top:0px;
-                            font-size:18px;
-                            text-transform:uppercase;
-                            &:before {
-                                content:"";
-                            }
-                        }
-                        blockquote {
-                            font-size:22px;
-                            font-weight: bold;
-                            font-style: italic;
-                            padding-top:40px;
-                            border-left:none;
-                            padding-left: 0;
-                            color: #108c95;
-                        }
-                    }
-                }
+    .testimonials-widget-testimonial.list {
+        margin-bottom:20px;
+        position:relative;
+        .credit {
+            position: absolute;
+            top:0px;
+            font-size:18px;
+            text-transform:uppercase;
+            &:before {
+                content:"";
+            }
+        }
+        blockquote {
+            font-size:22px;
+            font-weight: bold;
+            font-style: italic;
+            padding-top:40px;
+            border-left:none;
+            padding-left: 0;
+            color: #108c95;
+        }
+    }
+}
 h1 {margin-top:30px}
 /* contact us */
 .contact-us {
@@ -488,7 +502,7 @@ h1 {margin-top:30px}
                         }
                     }
                 }
-                
+
             }
         }
     }
@@ -499,12 +513,12 @@ aside.sidebar {
     margin-top:44px; 
     .gift-card {
         background:#006a72;//url('@{path-img}/bg-frm-giftcard.png') no-repeat top left;
-      padding:10px;
+        padding:10px;
         margin-top:15px;
         .gift-card-inner {
             padding: 15px;
             color: #fbefa5;border:3px solid #eed881;
-            
+
             h3 {
                 font-size:30px;
                 font-weight:bold;margin-top:0;

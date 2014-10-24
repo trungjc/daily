@@ -24,12 +24,15 @@
 			<header class="header clearfix" role="banner">
                             <div class="top-bar container">
                                 <div class="pull-right right-top">
+                                    <div class="pull-left">
                                    <div class="title"> Come shop with us on Prince Avenue!</div>
                                    <div class="info">
-                                       <div class="address">523 Prince Ave, Athens, GA 30601</div>
+                                       <div class="address"><a href="<?php echo(get_page_link(get_page_by_title('contact us')->ID)) ?>">523 Prince Ave, Athens, GA 30601</a></div>
                                         <div class="number">(706) 548-1732</div>
                                         <div class="time-open">Open Daily 8am -9pm</div>
                                    </div>
+                                    </div>
+                                    <a href="<?php echo(get_page_link(get_page_by_title('contact us')->ID)) ?>" class="map"></a>
                                 </div>
                                 <a class=" logo" href="<?php echo home_url(); ?>">
                                         <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
